@@ -5,8 +5,10 @@ import Services from "../pages/Services";
 import Signup from "../pages/Signup";
 import Doctors from "../pages/Doctors/Doctors";
 import DoctorDetails from "../pages/Doctors/DoctorDetails";
+import Explore from "../pages/Explore";
 
 import { Routes, Route } from "react-router-dom";
+
 
 const Routers = () => {
   return (
@@ -19,6 +21,7 @@ const Routers = () => {
       <Route path="/register" element={<Signup />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
+      <Route path="/explore" element={<Explore />} />
     </Routes>
   );
 };
