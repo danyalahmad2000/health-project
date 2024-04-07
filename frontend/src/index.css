@@ -15,7 +15,7 @@
     }
 
     .btn{
-        @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px];
+        @apply border border-solid border-primaryColor  hover:bg-primaryColor hover:text-white py-[15px] px-[35px] rounded-[50px] text-primaryColor font-[800] mt-[38px] ;
     }
 
     .heading{

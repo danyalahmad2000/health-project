@@ -89,7 +89,7 @@ const Header = () => {
             </div>
 
             <Link to='/login'>
-              <button className="bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]">Login</button>
+              <button className="py-2 px-6 text-primaryColor font-[600] h-[44px] flex items-center justify-center rounded-[50px] border border-solid border-primaryColor  hover:bg-primaryColor hover:text-white ">Login</button>
             </Link>
 
             <span className="md:hidden" onClick={toggleMenu}>
