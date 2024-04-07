@@ -10,7 +10,8 @@ export default {
         irisBlueColor: "#01B5C5",
         headingColor: "#181A1E",
         textColor: "#4E545F",
-        pinkColor: "#9C338D"
+        pinkColor: "#9C338D",
+        whiteColor: "#FFFFFF"
       },
 
       boxShadow: {

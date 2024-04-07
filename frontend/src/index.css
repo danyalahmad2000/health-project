@@ -31,7 +31,8 @@
     }
 
     .hero__section{
-        @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover mb-[60px]
+        @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover mb-[60px];
+        
     }
 }
 
