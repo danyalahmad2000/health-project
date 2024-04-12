@@ -30,10 +30,9 @@ const Home = () => {
                   tools, empowering you to take proactive control of your health
                   and well-being with HealthLink360.
                 </p>
-                <button className="btn border border-solid border-primaryColor  hover:bg-primaryColor hover:text-white ">
-                  {" "}
-                  Learn More{" "}
-                </button>
+                <Link to="/explore">
+                  <button className="btn">Learn More</button>
+                </Link>
               </div>
 
               {/* ============ Hero Section =========== */}
