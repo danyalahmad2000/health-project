@@ -35,6 +35,7 @@ const Header = () => {
       clearTimeout(timeoutId);
       const id = setTimeout(() => {
         setStickyHeader(false);
+        window.scrollTo(0, 0); 
       }, 1000);
       setTimeoutId(id);
     } else {
@@ -42,6 +43,7 @@ const Header = () => {
       clearTimeout(timeoutId);
     }
   };
+  
 
   useEffect(() => {
     let animationFrameId;
@@ -61,7 +63,7 @@ const Header = () => {
     const handleMouseLeave = () => {
       const id = setTimeout(() => {
         setStickyHeader(false);
-      }, 2000);
+      }, 5000);
       setTimeoutId(id);
     };
 
@@ -85,6 +87,7 @@ const Header = () => {
       target.scrollIntoView({
         behavior: "smooth",
         block: "start",
+        inline: "nearest", // This will ensure that the target element is centered vertically
       });
     }
   };
@@ -100,11 +103,13 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/*===== logo =====*/}
           <div className="my-3">
-            <img
-              src={logo}
-              alt="Logo"
-              style={{ width: "50px", height: "60px" }}
-            />
+            <Link to="/home" onClick={() => window.scrollTo(0, 0)}>
+              <img
+                src={logo}
+                alt="Logo"
+                style={{ width: "50px", height: "60px" }}
+              />
+            </Link>
           </div>
 
           {/* ========== menu ==========*/}
@@ -114,12 +119,16 @@ const Header = () => {
                 <li key={index}>
                   <NavLink
                     to={link.path}
-                    onClick={() => smoothScroll(link.path.substr(1))}
-                    className={(navClass) =>
-                      navClass.isActive
-                        ? "text-primaryColor text-[16px] leading-7 font-[]"
-                        : "text-textColor text-[16px] leading-7 font-[500] hover:text-primaryColor"
-                    }
+                    onClick={() => {
+                      smoothScroll(link.path.substr(1));
+                    }}
+                    isActive={(match, location) => {
+                      if (link.path === "/home") {
+                        return location.pathname === "/";
+                      }
+                      return location.pathname.includes(link.path);
+                    }}
+                    className="text-textColor text-[16px] leading-7 font-[500] hover:text-primaryColor"
                   >
                     {link.display}
                   </NavLink>
@@ -138,9 +147,9 @@ const Header = () => {
               </Link>
             </div>
 
-            <Link to="/login">
+            <Link to="/insights">
               <button className="py-2 px-6 text-primaryColor font-[600] h-[44px] flex items-center justify-center rounded-[50px] border border-solid border-primaryColor  hover:bg-primaryColor hover:text-white ">
-                Login
+                Join our Waitlist
               </button>
             </Link>
 
