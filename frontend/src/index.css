@@ -34,6 +34,10 @@
         @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover mb-[60px];
         
     }
+
+    .apply_bg{
+        @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover mb-[60px];
+    }
 }
 
 @media only screen and (max-width: 1024px) {
