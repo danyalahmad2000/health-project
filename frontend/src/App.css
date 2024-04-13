@@ -56,6 +56,18 @@ body {
   backdrop-filter: blur(4px);
 }
 
+/* CSS class to hide the header when applied */
+.hide-on-scroll {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Additional styles to ensure the header remains hidden when sticky */
+.sticky__header.hide-on-scroll {
+  top: -100px; /* Adjust the value based on your header height */
+}
+
+
 @media only screen and (max-width:768px) {
   .navigation{
     width: 100%;

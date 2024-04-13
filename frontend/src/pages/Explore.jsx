@@ -17,7 +17,7 @@ import "../styles/info.css";
 const Explore = () => {
   return (
     <>
-      <section className="my-[55px]">
+      <section className="hero__section pt-[60px] 2xl;h-[800px]">
         <div className="container">
           <div className="flex items-center justify-between flex-col lg:flex-row">
             {/* ============ Features Content Start =========== */}
@@ -95,6 +95,8 @@ const Explore = () => {
         </div>
       </section>
 
+      
+
       <section className="my-[55px]">
         <div className="container">
           <div className="lg:w-[470px] mx-auto">
@@ -165,6 +167,37 @@ const Explore = () => {
         </div>
       </section>
 
+      <section className="my-[55px]">
+        <div className="container">
+          <div className="flex items-center justify-between flex-col lg:flex-row">
+            {/* ============ Features Content Start =========== */}
+            <div className="xl:w-[670px]">
+              <h2 className="heading">Implementing Cost Reduction Strategies</h2>
+              <p className="text__para">
+                For insurers, HealthLink360's proactive health monitoring
+                translates to fewer claims and reduced payouts for acute health
+                episodes by catching and addressing potential health issues
+                before they escalate. Hospitals benefit from the decreased
+                burden on resources, with fewer emergency admissions and shorter
+                stays, while caregivers are provided with tools to manage
+                patient care effectively, reducing the need for frequent
+                in-person consultations.
+              </p>
+              <Link to="/insights">
+                <button className="btn">Join Our Waitlist</button>
+              </Link>
+            </div>
+            {/* ============ Features Content End =========== */}
+
+            {/* ============ Features Image Start =========== */}
+            <div className="relative z-10 xl:w-[770px] flex justify-end mt-[50px] lg:mt-0">
+              <img src={featureImg2} className="w-3/4" alt="" />
+            </div>
+            {/* ============ Features Image End =========== */}
+          </div>
+        </div>
+      </section>
+
       <section className="info-section" id="services">
         <div className="info-title-content">
           <h3 className="info-title mb-16">
@@ -194,37 +227,6 @@ const Explore = () => {
             title="Reducing Healthcare Costs"
             description="At HealthLink360, our AI-driven Coach360 platform redefines patient wellness, aligning with insurance companies' and hospitals' objectives. Predictive analytics guide patients to better health, reducing costs and resource strain. Integration optimizes efficiency, empowering patients with personalized insights for improved outcomes. Partner with us for innovation, cost-effectiveness, and elevated care."
           />
-        </div>
-      </section>
-
-      <section className="my-[55px]">
-        <div className="container">
-          <div className="flex items-center justify-between flex-col lg:flex-row">
-            {/* ============ Features Content Start =========== */}
-            <div className="xl:w-[670px]">
-              <h2 className="heading">Implementing Cost Reduction Strategies</h2>
-              <p className="text__para">
-                For insurers, HealthLink360's proactive health monitoring
-                translates to fewer claims and reduced payouts for acute health
-                episodes by catching and addressing potential health issues
-                before they escalate. Hospitals benefit from the decreased
-                burden on resources, with fewer emergency admissions and shorter
-                stays, while caregivers are provided with tools to manage
-                patient care effectively, reducing the need for frequent
-                in-person consultations.
-              </p>
-              <Link to="/insights">
-                <button className="btn">Join Our Waitlist</button>
-              </Link>
-            </div>
-            {/* ============ Features Content End =========== */}
-
-            {/* ============ Features Image Start =========== */}
-            <div className="relative z-10 xl:w-[770px] flex justify-end mt-[50px] lg:mt-0">
-              <img src={featureImg2} className="w-3/4" alt="" />
-            </div>
-            {/* ============ Features Image End =========== */}
-          </div>
         </div>
       </section>
 

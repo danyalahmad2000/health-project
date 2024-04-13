@@ -35,7 +35,6 @@ const Header = () => {
       clearTimeout(timeoutId);
       const id = setTimeout(() => {
         setStickyHeader(false);
-        window.scrollTo(0, 0); 
       }, 1000);
       setTimeoutId(id);
     } else {
@@ -87,10 +86,14 @@ const Header = () => {
       target.scrollIntoView({
         behavior: "smooth",
         block: "start",
-        inline: "nearest", // This will ensure that the target element is centered vertically
+        inline: "nearest",
       });
+  
+      // Add a class to the header to hide it when scrolling to a section
+      document.querySelector("header").classList.add("hide-on-scroll");
     }
   };
+  
 
   return (
     <header

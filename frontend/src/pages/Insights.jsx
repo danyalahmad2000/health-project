@@ -23,7 +23,7 @@ const Insights = () => (
 
         {/* ================ SignUp Form ================== */}
         <div className="rounded-l-lg lg:pl-16 py-10">
-          <h3 className="text-headingColor text-[22px] leading-9 font-bold mb-10 text-center ml-32">
+          <h3 className="text-headingColor text-[22px] leading-9 font-bold mb-10 text-center lg:ml-32">
             Link with <span className="text-primaryColor">HealthLink360</span>
           </h3>
           <Form
@@ -151,7 +151,7 @@ const Insights = () => (
                 span: 16,
               }}
             >
-              <Checkbox className="ml-12">Remember me</Checkbox>
+              <Checkbox className="md:ml-12 lg:ml-12">Remember me</Checkbox>
             </Form.Item>
 
             <Form.Item
@@ -160,7 +160,7 @@ const Insights = () => (
                 span: 16,
               }}
             >
-              <Button type="primary" htmlType="submit" className="ml-12">
+              <Button type="primary" htmlType="submit" className="md:ml-12 lg:ml-12 bg-primaryColor">
                 Submit
               </Button>
             </Form.Item>
