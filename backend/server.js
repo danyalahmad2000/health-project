@@ -56,7 +56,7 @@ app.post("/api/submitSubscribeForm", async (req, res) => {
       ]
     );
     client.release();
-    res.status(201).send("User created successfully");
+    res.status(201).send("Data inserted successfully");
   } catch (error) {
     console.error("Error executing SQL query", error);
     res.status(500).send("Internal server error");
