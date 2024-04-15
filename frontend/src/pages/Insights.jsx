@@ -13,26 +13,32 @@ const Insights = () => {
     job_title: "",
     company_name: "",
     company_website: "",
-    remember: false // assuming remember should start as false
+    remember: false,
   });
 
+  const [submissionStatus, setSubmissionStatus] = useState("");
+
   const onFinish = async (values) => {
-    console.log("Success:", values);
     try {
-      const response = await fetch('http://localhost:5000/api/submitSubscribeForm', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "http://localhost:5000/api/submitSubscribeForm",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
       if (response.ok) {
-        console.log('Form data submitted successfully');
+        setSubmissionStatus("Submission successful");
       } else {
-        console.error('Failed to submit form data');
+        setSubmissionStatus("Failed to submit form data");
       }
     } catch (error) {
-      console.error('Error submitting form data:', error);
+      console.error("Error submitting form data:", error);
+      setSubmissionStatus("Internal server error");
     }
   };
 
@@ -43,8 +49,6 @@ const Insights = () => {
   const handleChange = (changedValues) => {
     setFormData({ ...formData, ...changedValues });
   };
-
-  console.log(formData);
 
   return (
     <section className="px-5 xl:px-0 py-[55px]">
@@ -80,7 +84,6 @@ const Insights = () => {
               onValuesChange={handleChange}
             >
               {/* Form fields */}
-
               {/* Form.Item for Username */}
               <Form.Item
                 label="Username"
@@ -206,11 +209,28 @@ const Insights = () => {
                   span: 16,
                 }}
               >
-                <Button type="primary" htmlType="submit" className="md:ml-12 lg:ml-12 bg-primaryColor">
+                <Button
+                  type="primary"
+                  htmlType="submit"
+                  className="md:ml-12 lg:ml-12 bg-primaryColor"
+                >
                   Submit
                 </Button>
               </Form.Item>
             </Form>
+            <div className="text-center py-2">
+              {submissionStatus && (
+                <div
+                  className={`${
+                    submissionStatus === "Submission successful"
+                      ? "bg-green-500 text-white"
+                      : "bg-red-500 text-white"
+                  }`}
+                >
+                  {submissionStatus}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
