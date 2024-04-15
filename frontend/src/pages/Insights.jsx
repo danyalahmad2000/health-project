@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button, Checkbox, Form, Input, Select } from "antd";
 import signupImg from "../assets/images/signup.gif";
 
@@ -17,6 +17,14 @@ const Insights = () => {
   });
 
   const [submissionStatus, setSubmissionStatus] = useState("");
+
+  useEffect(() => {
+    console.log("Form Data:", formData);
+  }, [formData]);
+
+  useEffect(() => {
+    console.log("Submission Status:", submissionStatus);
+  }, [submissionStatus]);
 
   const onFinish = async (values) => {
     try {
