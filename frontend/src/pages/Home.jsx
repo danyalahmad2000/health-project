@@ -22,13 +22,16 @@ const Home = () => {
             <div>
               <div className="lg:w-[570px]">
                 <h1 className="text-[36px] leading-[46px] text-headingColor font-[800] md:text-[60px] md:leading-[70px]">
-                  Empower Your Path to Wellness with HealthLink360
+                  HealthLink360: Your Link to Better Health
                 </h1>
                 <p className="text__para">
-                  Discover a revolutionary platform that harnesses your data and
-                  cutting-edge technology to provide personalized insights and
-                  tools, empowering you to take proactive control of your health
-                  and well-being with HealthLink360.
+                  HealthLink360 is a prevention focused health and wellness
+                  platform that leverages your data and our innovative
+                  technology to empower individuals to take control of their
+                  health and well-being. It provides personalized insights,
+                  recommendations, and tools to help users make informed
+                  decisions about their health, prevent chronic illnesses, and
+                  improve their overall quality of life.
                 </p>
                 <Link to="/explore">
                   <button className="btn">Learn More</button>
@@ -76,10 +79,10 @@ const Home = () => {
       {/* ============ Hero Section End =========== */}
 
       {/* ============ How it works Section Start =========== */}
-      <section className="my-[55px]">
+      <section className="">
         <div className="container">
           <div className="lg:w-[470px] mx-auto">
-            <h2 className="heading text-center">
+            <h2 className="heading text-center pt-[20px]">
               Link to Better Health with HealthLink360
             </h2>
             <p className="text__para text-center">
@@ -96,16 +99,20 @@ const Home = () => {
 
               <div className="mt-[30px]">
                 <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">
-                  Coach360: Take Better Care of Yourself
+                  Take Better Care of Yourself
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  HealthLink360 revolutionizes health management with Coach360
-                  for AI-driven coaching and Contactless Vital Monitoring for
-                  convenient health tracking.
+                  Your body is sending you important signals about your health.
+                  Understand, manage, and get care for symptoms in minutes. With
+                  features such as Coach360 for culturally competent AI-driven
+                  Wellness coaching and Contactless Vital Monitoring for
+                  convenient health monitoring, HealthLink360 aims to
+                  revolutionize the way people approach their health management
+                  journey.
                 </p>
                 <Link
                   to="/explore"
-                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none"
+                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none mt-[65px]"
                 >
                   <BsArrowRight className="group-hover:text-white w-6 h-5" />
                 </Link>
@@ -123,11 +130,13 @@ const Home = () => {
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
                   Combining advanced culturally competent care with technology,
                   HealthLink360 promotes positive health behaviors tailored to
-                  your unique needs & preferences.
+                  your unique needs and preferences. Healthlink360 is more than
+                  an app; it's a movement toward a future where everyone has the
+                  tools to manage their health effectively.
                 </p>
                 <Link
                   to="/explore"
-                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none"
+                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none mt-[85px]"
                 >
                   <BsArrowRight className="group-hover:text-white w-6 h-5" />
                 </Link>
@@ -143,9 +152,13 @@ const Home = () => {
                   Experience the Power of Data-Informed Preventative Care
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  HealthLink360 redefines healthcare with proactive, data-driven
-                  preventive care, providing users insights for effective health
-                  management.
+                  At HealthLink360, we're transforming the healthcare paradigm
+                  with a singular vision: proactive, data-informed preventive
+                  care that caters to everyone in the health ecosystem, from
+                  individual users to the largest healthcare institutions.
+                  HealthLink360 is an all-in-one solution for individuals to
+                  track, manage, and improve their health, supported by easy
+                  access to a network of resources.
                 </p>
                 <Link
                   to="/explore"
@@ -163,7 +176,7 @@ const Home = () => {
       <About />
 
       {/* ============ Features Section Start =========== */}
-      <section className="my-[55px]">
+      <section className="apply_bg">
         <div className="container">
           <div className="flex items-center justify-between flex-col lg:flex-row">
             {/* ============ Features Content Start =========== */}
@@ -219,7 +232,7 @@ const Home = () => {
 
       {/* ============ Features Section End =========== */}
       {/* ============ Testimonial Section Start =========== */}
-      <section className="my-[55px]">
+      <section className="py-[50px]">
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center">What our users say</h2>

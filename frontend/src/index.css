@@ -31,12 +31,12 @@
     }
 
     .hero__section{
-        @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover mb-[60px];
+        @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover pb-[55px];
         
     }
 
     .apply_bg{
-        @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover mb-[60px];
+        @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover pb-[55px];
     }
 }
 
