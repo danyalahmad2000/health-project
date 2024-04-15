@@ -176,7 +176,7 @@ const Home = () => {
                 <li className="text__para">1. Collaborative Partner</li>
                 <li className="text__para">2. Culture Centric Organization</li>
                 <li className="text__para">3. Mission-Driven Team</li>
-                <Link to="/contact">
+                <Link to="/insights">
                   <button className="btn">Learn More</button>
                 </Link>
               </ul>
