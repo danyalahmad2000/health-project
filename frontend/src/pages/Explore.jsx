@@ -1,15 +1,10 @@
 import InformationCard from "../components/Info/InformationCard";
-import {
-  faHeartPulse,
-  faTruckMedical,
-  faTooth,
-} from "@fortawesome/free-solid-svg-icons";
 import featureImg from "../assets/images/Picture19.png";
 import featureImg2 from "../assets/images/Picture5.png";
 import icon01 from "../assets/images/Picture11.png";
 import icon02 from "../assets/images/Picture18.png";
 import icon03 from "../assets/images/Picture20.png";
-import aboutImg1 from "../assets/images/Picture12.png";
+import aboutImg1 from "../assets/images/Picture16.png";
 import aboutCardImg from "../assets/images/about-card.png";
 import { Link } from "react-router-dom";
 import "../styles/info.css";
